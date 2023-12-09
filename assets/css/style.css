@@ -9,6 +9,28 @@ body {
   line-height: 1.5;
 }
 
+.topnav {
+  background-color:navy;
+
+ }
+ 
+ .topnav a {
+ color: white;
+ width: 300px;
+ padding: 10px;
+ }
+
+ ul {
+   display:inline-flex;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+ }
+
+ li{
+ 
+ }
+
 h1,
 h2,
 h3,
@@ -20,10 +42,5 @@ h6 {
 
 p {
   margin: 0;
-}
-
-.topnav {
- background-color: aquamarine;
- align-items: flex-end;
 }
 
