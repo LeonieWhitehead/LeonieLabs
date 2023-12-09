@@ -30,30 +30,24 @@ flex-direction: row;
   padding: 0px 20px;
 }
 
-/* .nav_links li a{
+/* Column styles */ 
 
-} */
-/* .nav { */
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
-/* } */
-
-/* .right {
-  display: flex;
-  justify-content:end
-
-} */
-
-/* Column styles */
-/* body {
+body {
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-} */
+}
 
-/* .page-wrapper{
+.hero-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+.page-wrapper{
   display: flex;
   height: 1200px;
   width: 800px;
@@ -101,7 +95,7 @@ flex-direction: row;
   text-align: right; */
  
 
-/* h1,
+h1,
 h2,
 h3,
 h4,
@@ -112,7 +106,7 @@ h6 {
 
 p {
   margin: 0;
-} */
+}
 
 
 Footer Styles
