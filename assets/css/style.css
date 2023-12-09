@@ -9,26 +9,34 @@ body {
   line-height: 1.5;
 }
 
-.topnav {
+header {
   background-color:navy;
+  float: left;
 
  }
+
+ .topnav{
+  background-color: navy;
+  overflow: hidden; 
+  
+}
  
  .topnav a {
  color: white;
- width: 300px;
+ width: 200px;
  padding: 10px;
+ 
  }
+
 
  ul {
    display:inline-flex;
    list-style-type: none;
-   margin: 0;
-   padding: 0;
+  
  }
 
- li{
- 
+ li {
+  text-align: right;
  }
 
 h1,
