@@ -12,31 +12,31 @@
 
 <body>
   <!-- main logo / nav -->
-  <header class="left">
-    <h1>Leonie Whitehead</h1>
-  </header>
-  
-  <section class="topnav">
-    <nav>
-      <ul>
-        <h2><li><a href="#about">About Me</a></li></h2>
-        <h2><li><a href="#work">Work</a></li></h2>
-        <h2><li><a href="#contact">Contact Me</a></li></h2>
-        <h2><li><a href="">Resume</a></li></h2>
-      </ul>
-    </nav>
-  </section>
-  </header>
+  <div class="logo"><h1>LeonieWhitehead</h1></div>
+  <div class="nav">
+
+      <div class="right">
+            <ul>
+              <h2><li><a href="#about">About Me</a></li></h2>
+              <h2><li><a href="#work">Work</a></li></h2>
+              <h2><li><a href="#contact">Contact Me</a></li></h2>
+              <h2><li><a href="">Resume</a></li></h2>
+            </ul>
+      </div>
+  </div>
+
 
   <!-- hero banner -->
   <section class="hero-banner">
     <div>
-      <h2>Web Developer</h2>
       <img src="images\02-hero-bg.jpg" alt="chevron">
+      <h2>Web Developer</h2>
     </div>
   </section>
 
+  <!-- Column layout -->
   <main class="page-wrapper">
+    
     <!-- about me -->
     <section class="page-section" id="about">
       <h2>About Me</h2>
@@ -54,10 +54,18 @@
     </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
+    <section class="page-section" id="contact">
       <h2>Contact Me</h2>
+      <nav>
+        <ul>
+          <h3><li><a href="mailto: leonie@example.com">Send Email</a></li></h3>
+          <h3><li><a href="https://github.com/LeonieWhitehead">GitHub</a></li></h3>
+          <h3><li><a href="https://twitter.com/">Twitter</a></li></h3>
+          <h3><li><a href="https://open.spotify.com/">Spotify</a></li></h3>
+        </ul>
+      </nav>
+
     </section>
   </main>
 </body>
-
 </html>
