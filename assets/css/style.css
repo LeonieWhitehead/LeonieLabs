@@ -31,6 +31,26 @@ flex-direction: row;
   background-color: navy;
   color: orangered;
 }
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://source.unsplash.com/random);
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.text {
+  font-size: 1.4rem;
+  text-align: center;
+  color: brown;
+
+}
+
 body {
   margin: 0;
   padding: 0;
