@@ -1,9 +1,8 @@
-/* * {
+* {
   box-sizing: border-box;
-} */
+}
 
 /* Navigation styles */
-/* 
 header{
   display: flex;
   justify-content: space-between;
@@ -41,9 +40,7 @@ h6 {
   margin: 0;
 }
 
-p {
-  margin: 0;
-} */
+
 /* hero */
 
 /* .hero {
@@ -65,12 +62,13 @@ p {
 
 } */
 
+
 /* flexbox container */
 
 .flex-container {
   display: flex;
   flex-flow: row wrap;
-  text-align: center;
+  text-align: right;
 }
 
 .flex-container>*{
@@ -88,6 +86,13 @@ p {
   background: green;
 }
 
+.hero{
+  background: pink;
+  background-image: url("../css/hero.jpg");
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .main{
   text-align: right;
   background: blueviolet;
@@ -95,6 +100,24 @@ p {
 
 .sidebar{
   background: yellow;
+}
+
+#main-image-row{
+  margin: 2em;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+#second-images-row{
+  margin: 2em;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+#third-images-row{
+  margin: 2em;
+  display: flex;
+  /* flex-wrap: wrap; */
 }
 
 @media all and (min-width: 800px){
