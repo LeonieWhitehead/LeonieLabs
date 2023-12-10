@@ -1,15 +1,11 @@
 * {
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-  background-color: antiquewhite;
 }
 
 /* Navigation styles */
 
 header{
   display: flex;
-  /* flex-direction: row; */
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
@@ -35,90 +31,12 @@ flex-direction: row;
   background-color: navy;
   color: orangered;
 }
-
-.hero-banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* Column styles */ 
-
 body {
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
-
-.page-wrapper{
-  margin: 15px;
-  background-color: antiquewhite;
-
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-}
-
-.headings-column {
-  background-color: blue;
-  height: 80px;
-}
-
-.content-column {
-  background-color: green;
-  height: 80px;
-}
-
-/* .page-section{
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
-  margin-bottom: 20px; 
-}
-
-#about {
-  margin-top:20px;
-  background-repeat: no-repeat;
-  background-position: center;
-
-}
-#work {
-  background-repeat: no-repeat;
-  background-position: center;
-}
-#contact {
-  background-repeat: no-repeat;
-  background-position: center;
-} */ */
-
-/* header {
-  background-color:navy;
-  float: left;
-
-
-
- ul {
-   display:inline-flex;
-   list-style-type: none;
-  
- }
-
- li {
-  text-align: right; */
- 
 
 h1,
 h2,
@@ -134,21 +52,3 @@ p {
 }
 
 
-Footer Styles
-.contact{
-    display: flex;
-    justify-content: space-evenly;
-    align-items:center;
-    width: 100px;
-    height: 100px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #contact {
-    padding: 20px 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-  }
-  
-  
