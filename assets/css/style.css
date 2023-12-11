@@ -1,9 +1,22 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  display: grid;
+  grid-template-columns: 100% auto;
+
+} */
+
 /* Navigation styles */
 header{
+  grid-template-rows: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,26 +55,12 @@ h6 {
 
 
 /* hero */
-
-/* .hero {
-  display: flex;
-  flex-direction: column;
-  background-image: url(https://source.unsplash.com/random);
-  align-self: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  align-items: center;
-  justify-content: center;
-
+.hero{
+  background: pink;
+  background-image: url("../css/hero.jpg");
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
-
-.text {
-  font-size: 1.4rem;
-  text-align: center;
-  color: brown;
-
-} */
-
 
 /* flexbox container */
 
@@ -86,18 +85,30 @@ h6 {
   background: green;
 }
 
-.hero{
-  background: pink;
-  background-image: url("../css/hero.jpg");
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
 .main{
   text-align: right;
   background: blueviolet;
 }
 
+#main1{
+  background: chartreuse;
+}
+
+#main2{
+  background: orange;
+}
+
+#main3{
+  background: pink;
+}
+
+#main4{
+  background: olivedrab;
+}
+
+#main5{
+  background: navy;
+}
 .sidebar{
   background: yellow;
 }
@@ -105,22 +116,27 @@ h6 {
 #main-image-row{
   margin: 2em;
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 #second-images-row{
   margin: 2em;
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 #third-images-row{
   margin: 2em;
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-@media all and (min-width: 800px){
+/* @media all and (min-width: 800px){
   .main{
     flex: 3;
   }
@@ -141,12 +157,7 @@ h6 {
   .sidebar{
     flex: 1;
   }
-}
-/* body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
 } */
+
 
 
