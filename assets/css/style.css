@@ -4,19 +4,16 @@
   box-sizing: border-box;
 }
 
-/* body {
+body {
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
-  display: grid;
-  grid-template-columns: 100% auto;
+  display: flex;
 
-} */
+} 
 
 /* Navigation styles */
 header{
-  grid-template-rows: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,7 +53,6 @@ h6 {
 
 /* hero */
 .hero{
-  background: pink;
   background-image: url("../css/hero.jpg");
   padding-top: 200px;
   padding-bottom: 200px;
@@ -90,53 +86,48 @@ h6 {
   background: blueviolet;
 }
 
-#main1{
-  background: chartreuse;
-}
 
-#main2{
-  background: orange;
-}
-
-#main3{
-  background: pink;
-}
-
-#main4{
-  background: olivedrab;
-}
-
-#main5{
-  background: navy;
-}
 .sidebar{
   background: yellow;
 }
 
-#main-image-row{
-  margin: 2em;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+
+.images{
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
-#second-images-row{
-  margin: 2em;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+#beach{
+  background-image: url("../css/beach.jpg");
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
-#third-images-row{
-  margin: 2em;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+#led {
+  background-image: url("../css/ledwall.jpg");
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-/* @media all and (min-width: 800px){
+#calculator {
+  background-image: url("../css/calculator.jpg");
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#car {
+  background-image: url("../css/car.jpg");
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#run{
+  background-image: url("../css/02-run-buddy.jpg");
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media all and (min-width: 800px){
   .main{
     flex: 3;
   }
@@ -157,7 +148,7 @@ h6 {
   .sidebar{
     flex: 1;
   }
-} */
+}
 
 
 
