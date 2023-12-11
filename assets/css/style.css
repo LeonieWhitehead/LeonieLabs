@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body {
@@ -11,6 +12,24 @@ body {
   display: flex;
 
 } 
+
+.container { 
+  display: flex;
+  }
+.red {
+  background: orangered;
+  display: flex;
+  flex-direction: column;
+}
+.green {
+  background: yellowgreen;
+}
+.blue {
+  background: steelblue;
+}
+.purple {
+  background: purple;
+}
 
 /* Navigation styles */
 header{
@@ -56,6 +75,7 @@ h6 {
   background-image: url("../css/hero.jpg");
   padding-top: 200px;
   padding-bottom: 200px;
+  
 }
 
 /* flexbox container */
@@ -93,38 +113,53 @@ h6 {
 
 
 .images{
-  padding-top: 200px;
-  padding-bottom: 200px;
+display: flex;
+flex-wrap: wrap;
+background-repeat: no-repeat;
+justify-content: space-between;
+
 }
 
 #beach{
   background-image: url("../css/beach.jpg");
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 500px;
 }
 
 #led {
   background-image: url("../css/ledwall.jpg");
   padding-top: 20px;
   padding-bottom: 20px;
+  height: 100px;
+  width: 300px;
+
 }
 
 #calculator {
   background-image: url("../css/calculator.jpg");
   padding-top: 20px;
   padding-bottom: 20px;
+  height: 100px;
+  width: 300px;
+  
 }
 
 #car {
   background-image: url("../css/car.jpg");
   padding-top: 20px;
   padding-bottom: 20px;
+  height: 100px;
+  width: 300px;
 }
 
 #run{
   background-image: url("../css/02-run-buddy.jpg");
   padding-top: 20px;
   padding-bottom: 20px;
+  height: 100px;
+  width: 300px;
+  
 }
 
 @media all and (min-width: 800px){
