@@ -5,11 +5,15 @@ header {
   align-items: center;
   padding: 30px 10%;
   overflow: hidden;
+  background-color: #045c7f;
 }
 
 .logo {
   cursor: pointer;
   flex-direction: row;
+  color: white;
+  font-weight: 100;
+  font-size: 35px;
 }
 
 .nav_links {
@@ -20,10 +24,10 @@ header {
 .nav_links li {
   display: inline-block;
   padding: 0px 20px;
+  
 }
 
 .nav_links a:hover {
-  background-color: navy;
   color: orangered;
 }
 
@@ -38,15 +42,41 @@ h6 {
 
 
 /* hero */
-.hero {
-  background-image: url("../css/hero.jpg");
-  height: 25vh;
-  background-size: cover;
+#heroGrid {
+  margin: 0px;
+  display: grid;
+  min-height: 200px;
+  max
+  height: 70vh;
+  grid-template-rows: 30%
+  grid-template-columns: 100%;
+  grid-template-areas:
+  "hero"
 }
 
-.herotitle {
-  color: black;
-  background-color:
+#hero {
+  grid-area: hero;
+  background-image: url("../css/hero.jpg");
+}
+
+.heroGridArea {
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+#headline {
+  background-color: rgba(255,255,255,0.8);
+  border: 5px solid #045c7f;
+  position: absolute;
+  right: -5px;
+  top: 100px;
+  padding: 10px;
+  max-width: 500px;
+  z-index: 100;
 }
 
 /* Category Grid CSS */
@@ -60,7 +90,7 @@ h6 {
 }
 
 .grid-item {
-  background-color: #636364;
+  /* background-color: #636364; */
 }
 
 .grid-itemflex-container {
@@ -72,53 +102,74 @@ h6 {
 }
 
 .flex-item {
-  flex: 1;
+  display: flex;
 }
 
-#flexitem1 {
-  background-color: #FF6200;
+.about {
+display: flex;
 }
 
 #flexitem2 {
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 #flexitem3 {
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
 }
 
+.page-section{
+  padding: 40%;
+}
+
+.main{
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.heading{
+  background-color: rgba(255,255,255,0.8);
+  border: 5px solid #045c7f;
+  position: absolute;
+  padding: 10px;
+  z-index: 100;
+}
 
 #beach{
   grid-area: beach;
   background-image: url("../css/beach.jpg");
+  display: flex;
 }
 
 
 #LED {
   grid-area: LED; 
   background-image: url("../css/ledwall.jpg"); 
+  display: flex;
 }
 
 #calc {
   grid-area: calc; 
   background-image: url("../css/calculator.jpg");
+  display: flex;
 }
 
 #car {
   grid-area: car;
   background-image: url("../css/car.jpg");
+  display: flex;
 }
 
 #run {
   grid-area: run;
   background-image: url("../css/02-run-buddy.jpg");
+  display: flex;
 }
 /* Text */
 
 h2 {
-  font-size: 60px;
+  font-size: 35px;
   margin: 0px 0px;
-  color: #FF6200;
+  color: black;
 }
 
 h3 {
@@ -140,4 +191,54 @@ h4 {
   font-weight: 300;
   margin: 0px 0px;
   color: #636364;
+}
+
+/* #flexitem1{
+  order: ;
+} */
+
+/* image order */
+/* #flexitem2 {order: 1;}
+#flexitem3 {order: 2;}
+#flexitem4 {order: 2;}
+#flexitem5 {order: 3;}
+#flexitem6 {order: 3;} */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  overflow: hidden;
+  background-color: #045c7f;
+}
+
+.foot{
+flex-direction: row;
+color: white;
+font-weight: 100;
+font-size: 35px;
+}
+
+@media only screen and (max-width: 600px) {
+  #headline {
+    position: static;
+    margin: 20px;
+  }
+  #heroGrid {
+    grid-template-areas:
+    "hero hero";
+  }
+  #page-wrapper {
+    grid-template-rows: 5fr 5fr 5fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+      "beach"
+      "LED"
+      "car"
+      "calc"
+      "run"
+    ;
+  }
 }
