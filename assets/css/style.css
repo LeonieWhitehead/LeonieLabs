@@ -1,38 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  display: flex;
-
-} 
-
-.container { 
-  display: flex;
-  }
-.red {
-  background: orangered;
-  display: flex;
-  flex-direction: column;
-}
-.green {
-  background: yellowgreen;
-}
-.blue {
-  background: steelblue;
-}
-.purple {
-  background: purple;
-}
-
-/* Navigation styles */
-header{
+/* Navigation */
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,16 +8,16 @@ header{
 }
 
 .logo {
-cursor: pointer;
-flex-direction: row;
+  cursor: pointer;
+  flex-direction: row;
 }
 
 .nav_links {
   list-style: none;
- 
+
 }
 
-.nav_links li{
+.nav_links li {
   display: inline-block;
   padding: 0px 20px;
 }
@@ -71,119 +38,106 @@ h6 {
 
 
 /* hero */
-.hero{
+.hero {
   background-image: url("../css/hero.jpg");
-  padding-top: 200px;
-  padding-bottom: 200px;
-  
+  height: 25vh;
+  background-size: cover;
 }
 
-/* flexbox container */
+.herotitle {
+  color: black;
+  background-color:
+}
 
-.flex-container {
+/* Category Grid CSS */
+
+.grid-container {
+  height: 400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.grid-item {
+  background-color: #636364;
+}
+
+.grid-itemflex-container {
   display: flex;
-  flex-flow: row wrap;
-  text-align: right;
 }
 
-.flex-container>*{
-  padding: 10px;
-  margin: 10px;
-  flex: 1 100%;
-  border-radius: 10px;
+.grid-item2 {
+  display: flex;
 }
 
-.header{
-  background: tomato;
+.flex-item {
+  flex: 1;
 }
 
-.footer{
-  background: green;
+#flexitem1 {
+  background-color: #FF6200;
 }
 
-.main{
-  text-align: right;
-  background: blueviolet;
+#flexitem2 {
+  background-color: blue;
 }
 
-
-.sidebar{
-  background: yellow;
+#flexitem3 {
+  background-color: yellowgreen;
 }
 
-
-.images{
-display: flex;
-flex-wrap: wrap;
-background-repeat: no-repeat;
-justify-content: space-between;
-
-}
 
 #beach{
+  grid-area: beach;
   background-image: url("../css/beach.jpg");
-  padding-top: 20px;
-  padding-bottom: 20px;
-  height: 500px;
 }
 
-#led {
-  background-image: url("../css/ledwall.jpg");
-  padding-top: 20px;
-  padding-bottom: 20px;
-  height: 100px;
-  width: 300px;
 
+#LED {
+  grid-area: LED; 
+  background-image: url("../css/ledwall.jpg"); 
 }
 
-#calculator {
+#calc {
+  grid-area: calc; 
   background-image: url("../css/calculator.jpg");
-  padding-top: 20px;
-  padding-bottom: 20px;
-  height: 100px;
-  width: 300px;
-  
 }
 
 #car {
+  grid-area: car;
   background-image: url("../css/car.jpg");
-  padding-top: 20px;
-  padding-bottom: 20px;
-  height: 100px;
-  width: 300px;
 }
 
-#run{
+#run {
+  grid-area: run;
   background-image: url("../css/02-run-buddy.jpg");
-  padding-top: 20px;
-  padding-bottom: 20px;
-  height: 100px;
-  width: 300px;
-  
+}
+/* Text */
+
+h2 {
+  font-size: 60px;
+  margin: 0px 0px;
+  color: #FF6200;
 }
 
-@media all and (min-width: 800px){
-  .main{
-    flex: 3;
-  }
-  .sidebar{
-    order: 1;
-  }
-
-  .main{
-    order: 2;
-  }
-
-  .footer{
-    order: 4;
-  }
+h3 {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0px 0px;
 }
 
-@media all and (min-width: 600px){
-  .sidebar{
-    flex: 1;
-  }
+h4 {
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
 }
 
 
-
+#headline p {
+  max-width: 350px;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0px 0px;
+  color: #636364;
+}
